@@ -1,6 +1,6 @@
 html, body {
   height: 100%;
-  font-family: 'Open Sans', sans-serif
+  font-family: "Courier New", Courier, monospace;
 }
 
 body {
@@ -20,14 +20,14 @@ body {
 }
 
 .board div {
-  color: green;
+  color: #33cccc;
   font-size: 2rem;
   width: 75px;
   height: 75px;
-  border: 1px #ccc dotted;
-  border-radius: 10%;
+  border: 1px black dotted;
+  border-radius: 50%;
   background-color: white;
-  margin: 3px;
+  margin: 2px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -38,17 +38,19 @@ body {
 }
 
 div.mine, div.mine:hover {
-  background: no-repeat center/60% url("images/bomb.svg") crimson;
+  background: no-repeat center/60% url("images/bombs.svg");
+  border: 1px black dotted;
 }
 
 div.hidden {
-  background: #eee;
+  background: #fcfcfc;
 }
 
 div.hidden:hover {
-  background: #ccc;
+  background: #99ccff;
 }
 
 div.marked, div.marked:hover {
-  background: no-repeat center/60% url("images/mark.svg") deepskyblue;
+  background: no-repeat center/50% url("images/flag.svg");
+  border: 1px black solid;
 }
